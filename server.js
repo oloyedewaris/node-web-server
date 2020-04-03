@@ -40,6 +40,13 @@ app.get('/about', (req, res)=> {
   });
 });
 
+app.get('/project', (req, res)=> {
+  res.render('project.hbs', {
+    pageTitle: 'project page',
+    welcomeMessage: 'Welcome to the project page'
+  });
+});
+
 app.listen(port, ()=> {
   console.log(`server is up on port ${port}`);
 });
